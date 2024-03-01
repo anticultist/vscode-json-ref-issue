@@ -15,7 +15,8 @@ export class SchemaProvider implements TextDocumentContentProvider {
                 $schema: "http://json-schema.org/draft-07/schema",
                 $id: "https://github.com/anticultist/vscode-json-ref-issue/tree/main/src/my.schema.json",
                 type: "object",
-                properties: {}
+                properties: {},
+                additionalProperties: false
             };
 
             // const maxSubschemas = 58; // OK

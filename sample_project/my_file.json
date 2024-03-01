@@ -1,1 +1,3 @@
-{}
+{
+    "unexpected-property": "should be marked as not allowed"
+}
