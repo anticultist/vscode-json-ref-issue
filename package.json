@@ -9,13 +9,16 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onLanguage:json",
+    "workspaceContains:**/my.json"
+  ],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": [
+    "jsonValidation": [
       {
-        "command": "vscode-json-ref-issue.helloWorld",
-        "title": "Hello World"
+        "fileMatch": "my_file.json",
+        "url": "custom123://schemas/main.schema.json"
       }
     ]
   },
